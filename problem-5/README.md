@@ -373,7 +373,7 @@ model User {
   gender    String   @default("male")
   role      String   @default("user")
   createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  updatedAt DateTime @default(now()) @updatedAt
 }
 ```
 
